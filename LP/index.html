@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ミライ・ピットイン | 未来の自分に、繋がる一歩に。</title>
+  <style>
+    html { scroll-behavior: smooth; }
+    body { font-family: "游明朝", "Yu Mincho", serif; color: #1a1a1a; background: #f9f7f2; margin: 0; line-height: 1.8; }
+    .inner { max-width: 960px; margin: 0 auto; padding: 0 5%; }
+    .section { padding: 80px 0; }
+    .section-title { text-align: center; font-size: 2.2rem; margin-bottom: 50px; font-family: 'Noto Serif JP', serif; }
+
+    /* ヘッダー */
+    header { display: flex; justify-content: space-between; align-items: center; padding: 20px 5%; background: rgba(255, 255, 255, 0.95); position: sticky; top: 0; z-index: 100; border-bottom: 1px solid rgba(0,0,0,0.1); }
+    .nav-links { display: flex; gap: 30px; align-items: center; }
+    .nav-links a { text-decoration: none; color: #1a1a1a; font-weight: bold; font-size: 0.9rem; }
+    .cta-btn { background: #002b7f; color: #ffffff !important; padding: 12px 20px; border-radius: 4px; }
+
+    /* ヒーロー */
+    .top-hero { height: 80vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; background: url('bg-hero.jpg') no-repeat center center fixed; background-size: cover; }
+    .top-hero h1 { font-size: 3.5rem; line-height: 1.5; margin-bottom: 25px; color: #1a1a1a; text-shadow: 0 0 15px rgba(255,255,255,0.8); }
+
+    /* カード・実績 */
+    .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+    .card { background: #fff; padding: 40px; border: 1px solid #e0ddd6; text-align: center; }
+    .btn { display: inline-block; padding: 15px 30px; background: #3a3028; color: #fff; text-decoration: none; border-radius: 2px; margin-top: 20px; }
+    
+    .book-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 30px; }
+    .book-card { background: #fff; padding: 20px; text-align: center; border: 1px solid #eee; }
+    .book-card img { width: 100%; height: auto; margin-bottom: 15px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+    .book-btn { display: block; margin-top: 10px; padding: 10px; background: #002b7f; color: #fff; text-decoration: none; border-radius: 4px; }
+    
+    .achievements { background: #fff; padding: 30px; border: 1px solid #e0ddd6; margin: 30px 0; }
+    .profile-wrap { display: grid; grid-template-columns: 240px 1fr; gap: 40px; align-items: start; }
+  /* カード全体のスタイル */
+.service-card {
+  display: flex;        /* Flexboxを有効化 */
+  flex-direction: column; /* 縦並びに配置 */
+  height: 100%;         /* 高さを親要素に合わせる */
+  padding: 30px;
+  background: #fff;
+  border: 1px solid #ddd;
+}
+
+/* テキスト部分 */
+.service-text {
+  flex-grow: 1;         /* 余白を埋めるようにテキストが伸びる */
+  margin-bottom: 20px;
+}
+
+/* ボタン部分 */
+.service-btn {
+  margin-top: auto;     /* 自動的に上側の余白を最大化して一番下に配置 */
+  text-align: center;
+}</style>
+</head>
+<body>
+
+<header>
+  <div style="display: flex; flex-direction: column;">
+    <span style="font-size: 1.2rem; font-weight: bold; letter-spacing: 0.05em;">ミライ・ピットイン</span>
+    <span style="font-size: 0.75rem; color: #555; letter-spacing: 0.1em;">-未来の自分に、繋がる一歩を-</span>
+  </div>
+  <nav class="nav-links">
+    <a href="#service">サービス</a>
+    <a href="#achievements">実績</a>
+    <a href="#profile">プロフィール</a>
+    <a href="mailto:mirai.pitin.contact@gmail.com" class="cta-btn">お問い合わせ →</a>
+  </nav>
+</header>
+
+<section class="top-hero">
+  <h1>あなたの人生を、<br>唯一無二の物語に変える。</h1>
+  <p style="font-size: 1.2rem; font-weight: bold; background: rgba(255,255,255,0.5); padding: 5px 15px;">元Amazon ECコンサルが導く、出版とキャリアの新たな視座。</p>
+</section>
+
+<!-- 事業案内 -->
+<section class="section" id="service">
+  <div class="inner">
+    <h2 class="section-title">事業のご案内</h2>
+    <div class="services-grid">
+     <div class="service-card">
+      <div class="service-text"></div>
+        <h3>Amazon出版代行</h3>
+        <p>元アマゾンECコンサルが、Amazon1位獲得のノウハウで出版を丸ごと代行。執筆から入稿まで完全サポート。</p>
+        <a href="service-publishing.html" class="btn">詳細を見る</a>
+      </div>
+     <div class="service-card">
+      <div class="service-text"></div>
+        <h3>不登校・キャリア相談</h3>
+        <p>「彷徨い」を経験した漢道だからできる、次の一歩を照らす対話の場。</p>
+        <a href="./career-consulting.html" class="btn">相談を申し込む</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 著書・実績 -->
+<section class="section" id="achievements" style="background: #f2f0eb;">
+  <div class="inner">
+    <h2 class="section-title">著書紹介・実績</h2>
+    <div class="book-grid">
+      <div class="book-card"><img src="book1.jpg" alt="中卒、GAFAM行き。"><h5>中卒、GAFAM行き。</h5><a href="https://www.amazon.co.jp/dp/B0GZ6RTQ67" target="_blank" class="book-btn">Amazonで見る</a></div>
+      <div class="book-card"><img src="book2.jpg" alt="戦略的キャリアブレイク"><h5>戦略的キャリアブレイク</h5><a href="https://www.amazon.co.jp/dp/B0GYLPK5RD" target="_blank" class="book-btn">Amazonで見る</a></div>
+      <div class="book-card"><img src="book3.jpg" alt="35歳からの越境キャリア"><h5>35歳からの越境キャリア</h5><a href="https://www.amazon.co.jp/dp/B0GYBDL5W5" target="_blank" class="book-btn">Amazonで見る</a></div>
+      <div class="book-card"><img src="book4.jpg" alt="僕のミャンマー奮闘記"><h5>僕のミャンマー奮闘記</h5><a href="#" class="book-btn">Amazonで見る</a></div>
+    </div>
+    
+    <div class="achievements">
+     <h2 style="margin-top: 50px; text-align: center;">講演・講義およびメディア掲載実績</h2>
+<div class="achievements" style="background: #fff; padding: 40px; border: 1px solid #e0ddd6; line-height: 1.8;">
+  <p style="margin-bottom: 20px;">
+    「本」を武器に、全国の現場で「言葉」を届けてきた実績があります。<br>
+    私自身、自らの著書を出版し、その内容を軸に全国の自治体シンポジウムや大学講義で10年以上にわたり登壇を続けてきました。</p>
+      <h4>メディア掲載</h4>
+      <ul><li>日本経済新聞 朝刊1面掲載</li></ul>
+      <h4>主な講演・登壇実績</h4>
+      <ul>
+        <li>長野県主催「若者タウンミーティング」全体ファシリテーター</li>
+        <li>新潟新聞主催「地方創生の今」シンポジウムパネリスト</li>
+        <li>福岡県商工会議所向け講演</li>
+      </ul>
+      <h4>教育機関・講義実績</h4>
+      <ul>
+        <li>信州大学：「キャリア論」にて約10年間継続登壇</li>
+        <li>福岡大学：「地域論」等、複数の講義に登壇</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- プロフィール -->
+<section class="section" id="profile">
+  <div class="inner">
+    <h2 class="section-title">著者プロフィール</h2>
+    <div class="profile-wrap">
+      <div style="text-align:center;">
+        <img src="profile.png" alt="漢道" style="width: 200px; height: 200px; border-radius: 50%; object-fit: cover; border: 3px solid #fff; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+        <h3 style="margin-top: 20px;">漢道（おとこみち）</h3>
+      </div>
+      <div style="line-height: 1.8; color: #333;">
+        <p>福岡県生まれ。神奈川県の湘南エリア在住。40代の元中卒の会社員。中学校入学直後から不登校となり、13歳で社会から「終了宣告」を受ける。深夜2時の新聞配達に3年間無欠勤で従事し、独自の「自律」と「仕事観」を形成。</p>
+        <p>その後、大検を経て大学へ進学。株式会社リクルート入社、町役場出向、地方公務員を経て、単身ミャンマーへ移住。広告代理店に勤務しつつ映画俳優にも挑戦する異色のキャリアを歩む。しかし、インドでの修行中にパンデミックと軍事クーデターに巻き込まれ帰国。</p>
+        <p>帰国後、30代後半のニート生活から一転、外資系ベンチャーの立ち上げに参画。その後、テックジャイアント（GAFAM）での勤務を経て、現在は大手日系企業にてビジネスデザインに従事。信州大学で10年近く継続しているキャリア講義をはじめ、自治体や大学等での講演実績も多数。</p>
+        <p>「人生はいつからでも、何度でも、後付けで正解にできる」をモットーに、自身の波乱万丈な経験を「ハック思考」で言語化し、発信している。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p style="text-align: center; font-size: 0.8rem; margin: 50px 0;">
+    <a href="company.html">屋号概要</a> | 
+    <a href="tokutei.html">特定商取引法に基づく表記</a> | 
+    <a href="privacy.html">プライバシーポリシー</a>
+  </p>
+</footer>
+
+</body>
+</html>
