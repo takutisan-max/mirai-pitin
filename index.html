@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <head>
   <!-- 他のmetaタグの下に追加してください -->
   <meta property="og:title" content="ミライ・ピットイン | 未来の自分に、繋がる一歩に。">
   <meta property="og:description" content="元アマゾンECコンサルが、出版とキャリアを丸ごとサポート。あなたの知識と経験を、一冊の本へ。">
@@ -22,10 +21,119 @@
     .section-title { text-align: center; font-size: 2.2rem; margin-bottom: 50px; font-family: 'Noto Serif JP', serif; }
 
     /* ヘッダー */
-    header { display: flex; justify-content: space-between; align-items: center; padding: 20px 5%; background: rgba(255, 255, 255, 0.95); position: sticky; top: 0; z-index: 100; border-bottom: 1px solid rgba(0,0,0,0.1); }
-    .nav-links { display: flex; gap: 30px; align-items: center; }
-    .nav-links a { text-decoration: none; color: #1a1a1a; font-weight: bold; font-size: 0.9rem; }
-    .cta-btn { background: #002b7f; color: #ffffff !important; padding: 12px 20px; border-radius: 4px; }
+/* ヘッダー */
+
+header {
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+
+  padding:10px 5%;
+
+  background:rgba(255,255,255,0.95);
+
+  position:sticky;
+  top:0;
+  z-index:1000;
+
+  border-bottom:1px solid rgba(0,0,0,0.1);
+}
+
+/* PCメニュー */
+
+.pc-nav{
+  display:flex;
+  gap:24px;
+  align-items:center;
+}
+
+.pc-nav a{
+  text-decoration:none;
+  color:#1a1a1a;
+  font-weight:bold;
+  font-size:0.9rem;
+}
+
+/* お問い合わせ */
+
+.contact-btn{
+  background:#002b7f;
+  color:#fff !important;
+  padding:12px 20px;
+  border-radius:4px;
+}
+
+/* ハンバーガー */
+
+.menu-btn{
+  display:none;
+  background:none;
+  border:none;
+  font-size:28px;
+  cursor:pointer;
+}
+
+/* スマホメニュー */
+
+.mobile-menu{
+  position:fixed;
+  top:0;
+  right:-100%;
+
+  width:80%;
+  height:100vh;
+
+  background:#fff;
+
+  z-index:2000;
+
+  transition:0.3s;
+
+  padding:80px 30px;
+
+  box-shadow:-5px 0 20px rgba(0,0,0,0.1);
+}
+
+.mobile-menu.active{
+  right:0;
+}
+
+.mobile-menu a{
+  display:block;
+  margin-bottom:28px;
+
+  text-decoration:none;
+  color:#111;
+
+  font-size:18px;
+  font-weight:bold;
+}
+
+.close-btn{
+  position:absolute;
+  top:20px;
+  right:20px;
+
+  background:none;
+  border:none;
+
+  font-size:32px;
+}
+
+/* スマホ */
+
+@media screen and (max-width:768px){
+
+  .pc-nav{
+    display:none;
+  }
+
+  .menu-btn{
+    display:block;
+  }
+
+}
+
 
     /* ヒーロー */
     .top-hero { height: 80vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; background: url('bg-hero.jpg') no-repeat center center fixed; background-size: cover; }
@@ -68,23 +176,124 @@
 <body>
 
 <header>
- <div style="display: flex; align-items: center; gap: 10px;">
-  <img src="logo.png" alt="ロゴ" style="width: 80px; height: auto;">
-  <div style="display: flex; flex-direction: column;">
-    <span style="font-size: 1.2rem; font-weight: bold; letter-spacing: 0.05em;">ミライ・ピットイン</span>
-    <span style="font-size: 0.75rem; color: #555; letter-spacing: 0.1em;">-未来の自分に、繋がる一歩を-</span>
-  </div>
-</div>
- <nav class="nav-links">
-<a href="about.html" class="btn-about">ミライ・ピットインの想いを見る</a>
-  <a href="#service">サービス</a>
-  <a href="#achievements">実績</a>
-  <a href="#profile">プロフィール</a>
-  <a href="https://note.com/modern_shrew1900" target="_blank">note</a> <!-- ここを追加 -->
-  <a href="mailto:mirai.pitin.contact@gmail.com" class="cta-btn">お問い合わせ →</a>
-</nav>
-</header>
 
+ <div style="display:flex; align-items:center; gap:10px;">
+
+  <img
+    src="logo.png"
+    alt="ロゴ"
+    style="width:60px; height:auto;"
+  >
+
+  <div style="display:flex; flex-direction:column;">
+
+    <span style="
+      font-size:1rem;
+      font-weight:bold;
+      letter-spacing:0.05em;
+    ">
+      ミライ・ピットイン
+    </span>
+
+    <span style="
+      font-size:0.65rem;
+      color:#555;
+      letter-spacing:0.08em;
+    ">
+      -未来の自分に、繋がる一歩を-
+    </span>
+
+  </div>
+
+ </div>
+
+ <!-- PCメニュー -->
+
+ <nav class="pc-nav">
+
+  <a href="about.html">
+    想い
+  </a>
+
+  <a href="#service">
+    サービス
+  </a>
+
+  <a href="#achievements">
+    実績
+  </a>
+
+  <a href="#profile">
+    プロフィール
+  </a>
+
+  <a
+    href="https://note.com/modern_shrew1900"
+    target="_blank"
+  >
+    note
+  </a>
+
+  <a
+    href="mailto:mirai.pitin.contact@gmail.com"
+    class="contact-btn"
+  >
+    お問い合わせ
+  </a>
+
+ </nav>
+
+ <!-- スマホ -->
+
+ <button
+   class="menu-btn"
+   onclick="openMenu()"
+ >
+   ☰
+ </button>
+
+</header>
+<!-- スマホメニュー -->
+
+<div class="mobile-menu" id="mobileMenu">
+
+  <button
+    class="close-btn"
+    onclick="closeMenu()"
+  >
+    ×
+  </button>
+
+  <a href="about.html">
+    想い
+  </a>
+
+  <a href="#service">
+    サービス
+  </a>
+
+  <a href="#achievements">
+    実績
+  </a>
+
+  <a href="#profile">
+    プロフィール
+  </a>
+
+  <a
+    href="https://note.com/modern_shrew1900"
+    target="_blank"
+  >
+    note
+  </a>
+
+  <a
+    href="mailto:mirai.pitin.contact@gmail.com"
+  >
+    お問い合わせ
+  </a>
+
+</div>
 <section class="top-hero"
   style="
     min-height:80vh;
@@ -261,6 +470,20 @@
     <a href="privacy.html">プライバシーポリシー</a>
   </p>
 </footer>
+<script>
 
+function openMenu(){
+  document
+    .getElementById("mobileMenu")
+    .classList.add("active");
+}
+
+function closeMenu(){
+  document
+    .getElementById("mobileMenu")
+    .classList.remove("active");
+}
+
+</script>
 </body>
 </html>
