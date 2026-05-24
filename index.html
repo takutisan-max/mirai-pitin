@@ -59,10 +59,13 @@
 <body>
 
 <header>
+ <div style="display: flex; align-items: center; gap: 10px;">
+  <img src="logo.png" alt="ロゴ" style="width: 80px; height: auto;">
   <div style="display: flex; flex-direction: column;">
     <span style="font-size: 1.2rem; font-weight: bold; letter-spacing: 0.05em;">ミライ・ピットイン</span>
     <span style="font-size: 0.75rem; color: #555; letter-spacing: 0.1em;">-未来の自分に、繋がる一歩を-</span>
   </div>
+</div>
   <nav class="nav-links">
     <a href="#service">サービス</a>
     <a href="#achievements">実績</a>
@@ -71,9 +74,36 @@
   </nav>
 </header>
 
-<section class="top-hero">
-  <h1>あなたの人生を、<br>唯一無二の物語に変える。</h1>
-  <p style="font-size: 1.2rem; font-weight: bold; background: rgba(255,255,255,0.5); padding: 5px 15px;">元Amazon ECコンサルが導く、出版とキャリアの新たな視座。</p>
+<section class="top-hero"
+  style="
+    min-height:80vh;
+    padding:120px 0 100px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+  ">
+
+  <h1 style="
+    font-size:2.2rem;
+    line-height:1.35;
+    padding:0 6%;
+    letter-spacing:0.03em;
+    text-align:center;
+  ">
+    あなたの人生を、<br>
+    唯一無二の物語に変える。
+  </h1>
+<p style="
+  font-size:0.95rem;
+  font-weight:bold;
+  background:rgba(255,255,255,0.5);
+  padding:10px 15px;
+  margin:20px 8% 0;
+  line-height:1.7;
+  text-align:center;
+">元Amazon ECコンサルが導く、出版とキャリアの新たな視座。</p>
 </section>
 
 <!-- 事業案内 -->
@@ -134,33 +164,80 @@
 <!-- プロフィール -->
 <section class="section" id="profile">
   <div class="inner">
-    <h2 class="section-title">著者プロフィール</h2>
-<div class="profile-wrap" 
-     style="
-       display:flex;
-       flex-direction:column;
-       align-items:center;
-       gap:30px;">漢道（おとこみち）</h3>
+
+    <h2 class="section-title">
+      著者プロフィール
+    </h2>
+
+    <div class="profile-wrap"
+      style="
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        gap:30px;
+      ">
+
+      <div style="text-align:center;">
+
+        <img
+          src="profile.png"
+          alt="漢道"
+          style="
+            width:160px;
+            height:160px;
+            border-radius:50%;
+            object-fit:cover;
+            border:3px solid #fff;
+            box-shadow:0 4px 10px rgba(0,0,0,0.1);
+          "
+        >
+
+        <h3 style="margin-top:20px;">
+          漢道（おとこみち）
+        </h3>
+
       </div>
-      <img src="profile.png" alt="漢道" style="
-  width:160px;
-  height:160px;
-  border-radius:50%;
-  object-fit:cover;
-  border:3px solid #fff;
-  box-shadow:0 4px 10px rgba(0,0,0,0.1);
-">
-   <div style="
-  line-height:1.9;
-  color:#333;
-  width:100%;
-  max-width:700px;
-  text-align:left;
-">
-        <p>福岡県生まれ。神奈川県の湘南エリア在住。40代の元中卒の会社員。中学校入学直後から不登校となり、13歳で社会から「終了宣告」を受ける。深夜2時の新聞配達に3年間無欠勤で従事し、独自の「自律」と「仕事観」を形成。</p>
-        <p>その後、大検を経て大学へ進学。株式会社リクルート入社、町役場出向、地方公務員を経て、単身ミャンマーへ移住。広告代理店に勤務しつつ映画俳優にも挑戦する異色のキャリアを歩む。しかし、インドでの修行中にパンデミックと軍事クーデターに巻き込まれ帰国。</p>
-        <p>帰国後、30代後半のニート生活から一転、外資系ベンチャーの立ち上げに参画。その後、テックジャイアント（GAFAM）での勤務を経て、現在は大手日系企業にてビジネスデザインに従事。信州大学で10年近く継続しているキャリア講義をはじめ、自治体や大学等での講演実績も多数。</p>
-        <p>「人生はいつからでも、何度でも、後付けで正解にできる」をモットーに、自身の波乱万丈な経験を「ハック思考」で言語化し、発信している。</p>
+
+      <div
+        style="
+          line-height:1.9;
+          color:#333;
+          width:100%;
+          max-width:700px;
+          text-align:left;
+        "
+      >
+
+        <p>
+          福岡県生まれ。神奈川県の湘南エリア在住。40代の元中卒の会社員。
+          中学校入学直後から不登校となり、13歳で社会から「終了宣告」を受ける。
+          深夜2時の新聞配達に3年間無欠勤で従事し、
+          独自の「自律」と「仕事観」を形成。
+        </p>
+
+        <p>
+          その後、大検を経て大学へ進学。株式会社リクルート入社、
+          町役場出向、地方公務員を経て、単身ミャンマーへ移住。
+          広告代理店に勤務しつつ映画俳優にも挑戦する異色のキャリアを歩む。
+          しかし、インドでの修行中にパンデミックと軍事クーデターに巻き込まれ帰国。
+        </p>
+
+        <p>
+          帰国後、30代後半のニート生活から一転、
+          外資系ベンチャーの立ち上げに参画。
+          その後、テックジャイアント（GAFAM）での勤務を経て、
+          現在は大手日系企業にてビジネスデザインに従事。
+          信州大学で10年近く継続しているキャリア講義をはじめ、
+          自治体や大学等での講演実績も多数。
+        </p>
+
+        <p>
+          「人生はいつからでも、何度でも、
+          後付けで正解にできる」をモットーに、
+          自身の波乱万丈な経験を「ハック思考」で言語化し、
+          発信している。
+        </p>
+
       </div>
     </div>
   </div>
